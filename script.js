@@ -2,13 +2,13 @@
 
 var ua = 26;
 
-function exchange () {
+function exchangetoua () {
 	var usa = document.getElementById('exc').value;
 	result = usa * ua;
 	document.getElementById("res").innerHTML = "Your money ua:"+"  "+ result;
 }
 
-function exchange2 () {
+function exchangetousa () {
 	var usa = document.getElementById('exc2').value;
 	result = usa / ua;
 	document.getElementById("res").innerHTML = "Your money usa:"+"  "+ result;

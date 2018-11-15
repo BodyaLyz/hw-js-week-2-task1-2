@@ -16,36 +16,36 @@ function exchange2 () {
 
 // task one - 2
 
-function findmax() {
-    document.getElementById("result").innerHTML = Math.max(1,23,-5,11);
-}
-
-function findmin() {
-    document.getElementById("result").innerHTML = Math.min(1,23,-5,11);
+function findmaxandmin() {
+    document.getElementById("result").innerHTML = "max " + Math.max(1,23,-5,11) + ", min " + Math.min(1,23,-5,11);
 }
 
 // task one-3 
-
-var elmt = [1,4,2]
+var elmt = [1,4,2];
 var sum = 0;
 
+function average() {
+	
 for( var i = 0; i < elmt.length; i++ ){
     sum += parseInt( elmt[i] ); 
-}
-
-var avg = sum/elmt.length;
-
-function average () {
+	var avg = sum/elmt.length;
+	
 document.getElementById('res2').innerHTML = "Сума:"+' '+ sum + "<br> Cереднє значення:"+" "+ avg.toFixed(2);
+}
 }
 
 // task two
 
-recursion(1);
+function recursion(num) {
+    if(num >= 1) {
+        document.write( ' ' + num);
+        recursion(num - 1);
+    }
+}
+recursion(10)
 
-function recursion(num){
-  if (num < 10) 
-    recursion(num + 1);
-document.write( ' ' + num);
- }
+
+
+
+
 

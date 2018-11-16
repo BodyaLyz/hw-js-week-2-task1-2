@@ -2,34 +2,34 @@
 
 var ua = 26;
 
-function exchangetoua () {
-	var usa = document.getElementById('exc').value;
+function convertUA () {
+	var usa = document.getElementById('convert').value;
 	result = usa * ua;
 	document.getElementById("res").innerHTML = "Your money ua:"+"  "+ result;
 }
 
-function exchangetousa () {
-	var usa = document.getElementById('exc2').value;
+function convertUSA () {
+	var usa = document.getElementById('converttwo').value;
 	result = usa / ua;
 	document.getElementById("res").innerHTML = "Your money usa:"+"  "+ result;
 }
 
 // task one - 2
 
-function findmaxandmin() {
+function findMinMax() {
     document.getElementById("result").innerHTML = "max " + Math.max(1,23,-5,11) + ", min " + Math.min(1,23,-5,11);
 }
 
 // task one-3 
+
 var elmt = [1,4,2];
-var sum = 0;
 
 function average() {
-	
-for( var i = 0; i < elmt.length; i++ ){
+	var sum = 0;	
+	for( var i = 0; i < elmt.length; i++ ){
     sum += parseInt( elmt[i] ); 
 	var avg = sum/elmt.length;
-	
+		
 document.getElementById('res2').innerHTML = "Сума:"+' '+ sum + "<br> Cереднє значення:"+" "+ avg.toFixed(2);
 }
 }
@@ -38,9 +38,7 @@ document.getElementById('res2').innerHTML = "Сума:"+' '+ sum + "<br> Cере
 
 function recursion(num) {
     if(num >= 1) {
-        document.write( ' ' + num);
-        recursion(num - 1);
-    }
+    document.write( ' ' + num);
 }
 recursion(10)
 

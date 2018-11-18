@@ -19,9 +19,14 @@ function convertToUsd() {
 var given = [1, 23, -5, 11];
 
 function findMinMax(arr) {
-    document.getElementById("result").innerHTML = "max " + Math.max(...arr) + ", min " + Math.min(...arr);
+    var min = Math.min(...arr);
+    var max = Math.max(...arr);
+    document.getElementById("result").innerHTML = "max: " + max + ", min: " + min;
+    return {
+        Min: min,
+        Max: max
+    }
 }
-
 findMinMax(given)
 
 // task one - 3 

@@ -1,17 +1,17 @@
 // task one - 1
 
-var ua = 26;
+var uah = 26;
 
-function convertToUa() {
-    var usa = document.getElementById('convert').value;
-    result = usa * ua;
-    document.getElementById("res").innerHTML = "Your money ua:" + "  " + result;
+function convertToUah() {
+    var usd = document.getElementById('convert').value;
+    result = usd * uah;
+    document.getElementById("res").innerHTML = "Your money UAH:" + "  " + result;
 }
 
 function convertToUsd() {
-    var usa = document.getElementById('converttwo').value;
-    result = usa / ua;
-    document.getElementById("res").innerHTML = "Your money usa:" + "  " + result;
+    var usd = document.getElementById('converttwo').value;
+    result = usd / uah;
+    document.getElementById("res").innerHTML = "Your money USD:" + "  " + result;
 }
 
 // task one - 2
